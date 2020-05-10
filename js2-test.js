@@ -104,3 +104,15 @@ function test() {
 }
 test(); // ?
 */
+// output will be ( one 
+                // six
+                // four
+                // two
+                // five
+                // three)
+                
+// First the event loop form and it call the functions one ofter another from top to buttom
+// untill setTimeout which take a time delay even if it is set to zero that doesnot mean it is 
+// called immediately it waits in a callback queue till its time expires
+// the ouput may vary in different browsers I really don't have any indea 
+// but i expected to vary according to how different browser deal with setTimeOut . 
