@@ -16,12 +16,13 @@ const books = [
 function injectBooksToDOM(arrOfObjects){
     let div = document.getElementById("root");
     let ul = document.createElement("ul");
-    div.appendChild(ul);
+    
     arrOfObjects.forEach(function(item) {
         let li = document.createElement('li');
         li.appendChild(document.createTextNode(`${item.bookName}`));
         ul.appendChild(li);
     });
+    div.appendChild(ul);
     
 }
 injectBooksToDOM(books);
