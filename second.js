@@ -1,6 +1,6 @@
 function logNumbers(startNumber,stopNumber){
     for(let i = startNumber;i <= stopNumber; i++){
-        if((i%3 === 0) && (i%5 === 0)){
+        if(i%15 === 0){
             console.log("FizzBuzz");
         }else if (i%5 === 0){
             console.log("Buzz");
@@ -12,4 +12,4 @@ function logNumbers(startNumber,stopNumber){
     }
 
 }
-logNumbers(1, 20);
+logNumbers(1, 100);
